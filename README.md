@@ -63,7 +63,7 @@ Plurals:
 
 Log:
 
-    log-graph = log --graph --all  --decorate --oneline
+    adog = log --all --decorate --oneline --graph
     log-standup = !git log --since yesterday --author $(git config user.email) --pretty=short
 
 Workflow:

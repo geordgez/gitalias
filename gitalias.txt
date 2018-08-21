@@ -374,7 +374,7 @@
   log-me = !git log --author $(git config user.email)
 
   # Show log as a graph
-  log-graph = log --graph --all --oneline --decorate
+  adog = log --all --decorate --oneline --graph
 
   # Show the date of the first commit
   log-first-date = !"git log --date-order --date=iso --pretty=%ad --reverse | head -1"

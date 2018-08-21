@@ -29,8 +29,12 @@ Git Alias is a collection of git version control shortcuts, functions, and comma
 
 
 ## Install
-
+    
 Download the file `gitalias.txt` and put it anywhere you want:
+
+    curl -O https://raw.githubusercontent.com/geordgez/gitalias/master/gitalias.txt
+    
+Or use the original (upstream) [repo](https://github.com/GitAlias/gitalias):
 
     curl -O https://raw.githubusercontent.com/GitAlias/gitalias/master/gitalias.txt
 

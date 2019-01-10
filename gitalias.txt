@@ -92,6 +92,9 @@
 
   # diff - changes about to be commited
   ds = diff --staged
+  
+  # diff - show file names only
+  df = diff --name-only
 
   # diff - show changes but by word, not line
   dw = diff --word-diff
@@ -271,6 +274,9 @@
   smuir = submodule update --init --recursive
 
   ### status ###
+  
+  # status without untracked files
+  suno = status --untracked=no
 
   # status with short format instead of full details
   ss = status --short
@@ -279,6 +285,9 @@
   ssb = status --short --branch
 
   ### ALIAS MANAGEMENT ###
+  
+  # preferred shortcut to get all aliases - usage `git getaliases`
+  getaliases = config --get-regexp alias
 
   # Show our defined alias list
   aliases = "!git config --get-regexp '^alias\\.' | cut -c 7- | sed 's/ / = /'"
@@ -510,7 +519,9 @@
   # Do a push/pull for just one branch
   push1 = "!git push origin $(git branch-name)"
   pull1 = "!git pull origin $(git branch-name)"
-
+  
+  # Push command by personal habit
+  puo = push -u origin 
 
   ##
   # Reset & Undo
